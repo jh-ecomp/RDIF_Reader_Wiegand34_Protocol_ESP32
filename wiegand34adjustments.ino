@@ -164,10 +164,6 @@ void loop() {
     card[2] = 0;
     card[3] = 0;
     card[4] = 0;
-  }else{
-    if(bits > 0){
-      bits = 0;
-    }
   }
   /*
    * Delay de 2 segundos, pode ser substituido por sleep mode se a leitura do cartão for configurada para despertar a ESP32
