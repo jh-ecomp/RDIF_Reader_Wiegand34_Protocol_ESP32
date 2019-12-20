@@ -1,5 +1,5 @@
-#ifndef _WIEGAND_H
-#define _WIEGAND_H
+#ifndef _WIEGAND34_H
+#define _WIEGAND34_H
 
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
@@ -14,7 +14,6 @@ public:
 	void begin(int pinD0, int pinD1);
 	bool available();
 	uint16_t getMsgCode();
-	
   uint32_t getCardId();
 	
 private:

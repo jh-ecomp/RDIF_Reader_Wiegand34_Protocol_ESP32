@@ -13,13 +13,13 @@ void setup() {
 
 void loop() {
   if(wg.available()){
-    String msg = message(wg.getMsgCode(), wg.getCardId());
+    String msg = message(wg.getMsgCode(), wg.getCardId()); // Getting message with device id + message code + card id
     Serial.print("Card code: ");
     Serial.println(wg.getCardId(), HEX);
     Serial.print("Message: ");
     Serial.println(msg);
     Serial.print("TrixMessage: ");
-    Serial.println(trixMsg(msg));
+    Serial.println(trixMsg(msg)); // TrixFormat message
   }
   delay(2000);
 }
